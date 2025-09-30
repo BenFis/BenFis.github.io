@@ -1,0 +1,14 @@
+html{
+     background-color:white;
+     text-align: center;
+}
+
+header{
+     background-color: blue;
+     display: flexbox;
+}
+
+nav{
+   background-color: brown;
+   color:white
+}
