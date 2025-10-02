@@ -3,38 +3,78 @@ html{
      display: flexbox;
 }
 
-/*header{
-     background-color: blue;
-     text-align: center;
-     margin: 10;
-}*/
+body{
+     min-height: 100vh;
+     text-align: left;
+     margin: 0;
+     padding: 0;
+
+}
 
 nav{
    
    background-color: gray;
+   width: 100%;
    color:white;
    text-align: center;
    list-style-type: none;
    margin: 0;
    padding: 0;
    display: flex;
-   justify-content: center;
+   justify-content: flex-end;
 }
 
 nav li a{
-     display: block;
+     display: flex;
      color: white;
      padding: 14px 16px;
      text-decoration: none;
+     align-items: center;
 }
 
 nav li a:hover{
      background-color: black;
 }
 
-body{
-     /*background-color: lightblue;*/
-     text-align: left;
-     margin: 0;
-     padding: 0;
+.sidebar{
+     position: fixed;
+     top: 0;
+     right: 0;
+     height: 100vh;
+     width: 150px;
+     z-index: 999;
+     background-color: (128, 128, 128, 0.2);
+     backdrop-filter: blur(10px);
+     display: none;
+     flex-direction: column;
+     align-items: flex-start;
+     justify-content: flex-start;
+}
+
+.sidebar li{
+     width: 100%;
+}
+
+.sidebar a{
+     width: 100%;
+}
+
+.menu-button{
+     display: none;
+}
+
+@media(max-width: 800px){
+     .phonehide{
+          display: none;
+     }
+
+   .menu-button{
+          display: block;
+     }
+}
+
+@media(max-width: 400px){
+     .sidebar{
+          width: 100%;
+     }
 }
