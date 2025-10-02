@@ -1,6 +1,8 @@
 html{
      background-color:white;
      display: flexbox;
+     margin: 0;
+     padding: 0;
 }
 
 body{
@@ -14,6 +16,7 @@ body{
 nav{
    
    background-color: gray;
+   box-shadow: 3px 3px 3px rgb(45, 44, 44, 0.4);
    width: 100%;
    color:white;
    text-align: center;
@@ -24,18 +27,36 @@ nav{
    justify-content: flex-end;
 }
 
+nav ul{
+      width: 100%;
+      list-style-type: none;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      text-align: center;
+}
+
+nav li{
+     height: 50px;
+}
+
 nav li a{
      display: flex;
      color: white;
-     padding: 14px 16px;
+     padding: 0 30px;
      text-decoration: none;
      align-items: center;
+     height: 100%;
 }
 
 nav li a:hover{
      background-color: black;
 }
-
+/*
+nav li:first-child{
+     margin-right: auto;
+}
+*/
 .sidebar{
      position: fixed;
      top: 0;
@@ -43,8 +64,9 @@ nav li a:hover{
      height: 100vh;
      width: 150px;
      z-index: 999;
-     background-color: (128, 128, 128, 0.2);
+     background-color: gray;
      backdrop-filter: blur(10px);
+     box-shadow: -5px 1px 3px rgb(45, 44, 44, 0.4);
      display: none;
      flex-direction: column;
      align-items: flex-start;

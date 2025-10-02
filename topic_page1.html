@@ -1,18 +1,66 @@
 <!DOCTYPE html>
-<html>
-     <head>
-           <link href="CSS/main.css" rel="stylesheet">
-     </head>
-     <nav>
-         <li><a href="index.html">Home</a></li>
-         <li><a href="about.html">About</a></li>
-         <li><a href="concept.html">Concept</a></li>
-         <li><a href="reference.html">Reference</a></li>
-         <li><a href="topic_page1.html">Topic 1</a></li>
-         <li><a href="topic_page2.html">Topic 2</a></li>
-     </nav>
+<html lang="en">
+    <head>
+        <title>TP1</title>
+        <link href="CSS/main.css" rel="stylesheet">
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    
+   <body>
+        
+        <nav>
+               <ul class="sidebar">
+                      <li onclick="hideSidebar()"><a href="index.html"><img src="/images/close_24dp.svg" height="30" width="30" alt="close"></a></li>
+                      <li><a href="index.html">Home</a></li>
+                      <li><a href="about.html">About</a></li>
+                      <li><a href="concept.html">Concept</a></li>
+                      <li><a href="topic_page1.html">Topic 1</a></li>
+                      <li><a href="topic_page2.html">Topic 2</a></li>
+                      <li><a href="reference.html">Reference</a></li>
+               </ul>
+          
+        
+               <ul>
+                      <!--<li><img src="/images/menu_24dp.svg"></li>-->
+                      <li class="phonehide"><a href="index.html">Home</a></li>
+                      <li class="phonehide"><a href="about.html">About</a></li>
+                      <li class="phonehide"><a href="concept.html">Concept</a></li>
+                      <li class="phonehide"><a href="topic_page1.html">Topic 1</a></li>
+                      <li class="phonehide"><a href="topic_page2.html">Topic 2</a></li>
+                      <li class="phonehide"><a href="reference.html">Reference</a></li>
+                      <li class="menu-button"onclick="showSidebar()"><a href="#"><img src="/images/menu_24dp.svg" height="30" width="30" alt="sidemenu"></a></li>
+               </ul>
+         </nav>
+   
 
-     <body>
-           topic1
+
+
+    
+        
+        <h1>
+          HTML...
+        </h1>
+        <p>
+          Topic Page 1
+        </p>
+        
+
+
+
+
+
+        <script>
+            function showSidebar(){
+                  const sidebar = document.querySelector(".sidebar")
+                  sidebar.style.display = "flex"
+               }
+            function hideSidebar(){
+                  const sidebar = document.querySelector(".sidebar")
+                  sidebar.style.display = "none"
+               }
+        </script>
+
      </body>
 </html>
