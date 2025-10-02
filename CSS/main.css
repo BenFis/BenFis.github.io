@@ -7,10 +7,15 @@ html{
 
 body{
      min-height: 100vh;
-     text-align: left;
+     text-align: center;
      margin: 0;
      padding: 0;
 
+}
+
+#logo{
+     margin-right: auto;
+     align-items: center;
 }
 
 nav{
@@ -18,7 +23,7 @@ nav{
    background-color: gray;
    box-shadow: 3px 3px 3px rgb(45, 44, 44, 0.4);
    width: 100%;
-   color:white;
+   color: white;
    text-align: center;
    list-style-type: none;
    margin: 0;
@@ -27,13 +32,15 @@ nav{
    justify-content: flex-end;
 }
 
+
 nav ul{
-      width: 100%;
-      list-style-type: none;
-      display: flex;
-      justify-content: flex-end;
-      align-items: center;
-      text-align: center;
+
+     width: 100%;
+     list-style-type: none;
+     display: flex;
+     justify-content: flex-end;
+     align-items: center;
+     text-align: center;
 }
 
 nav li{
@@ -47,6 +54,7 @@ nav li a{
      text-decoration: none;
      align-items: center;
      height: 100%;
+     font-family: Verdana;
 }
 
 nav li a:hover{
@@ -62,10 +70,11 @@ nav li:first-child{
      top: 0;
      right: 0;
      height: 100vh;
-     width: 150px;
+     width: 140px;
      z-index: 999;
      background-color: gray;
-     backdrop-filter: blur(10px);
+     opacity: 0.8;
+     /*backdrop-filter: blur(10px);*/
      box-shadow: -5px 1px 3px rgb(45, 44, 44, 0.4);
      display: none;
      flex-direction: column;
