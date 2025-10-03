@@ -29,11 +29,12 @@ footer a{
 }
 
 table,th,td{
-border: 1px solid black;
+     border: 2px solid black;
+     border-collapse: collapse;
 }
 
 table th{
-     background-color: rgb(200, 195, 195)
+     background-color: rgb(200, 195, 195)  
 }
 
 #logo{
@@ -67,7 +68,6 @@ nav ul{
 nav li{
      height: 50px;
      border-right: 1px solid black;
-
 }
 
 nav li:last-child, nav li:nth-last-child(2){
