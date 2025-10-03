@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+    
     <head>
         <title>Home</title>
         <link href="CSS/main.css" rel="stylesheet">
@@ -8,9 +9,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     
-   <body>
-        
-        <nav>
+    <body> 
+         <nav>
                <ul class="sidebar">
                       <li onclick="hideSidebar()"><a href="index.html"><img src="/images/close_24dp.svg" height="35" width="35" alt="close"></a></li>
                       <li><a href="index.html">Home</a></li>
@@ -33,34 +33,35 @@
                       <li class="menu-button"onclick="showSidebar()"><a href="#"><img src="/images/menu_24dp.svg" height="35" width="35" alt="sidemenu"></a></li>
                </ul>
          </nav>
-   
+         
 
 
 
     
         
-        <h1>
-          HTML...
-        </h1>
-        <p>
-          This is the index file.
-        </p>
+         <h1>
+             HTML...
+         </h1>
+         <p>
+             This is the index file.
+         </p>
         
 
 
 
 
 
-        <script>
-            function showSidebar(){
+         <script>
+               function showSidebar(){
                   const sidebar = document.querySelector(".sidebar")
                   sidebar.style.display = "flex"
                }
-            function hideSidebar(){
+               function hideSidebar(){
                   const sidebar = document.querySelector(".sidebar")
                   sidebar.style.display = "none"
                }
-        </script>
+         </script>
+   </body>
 
-     </body>
+
 </html>

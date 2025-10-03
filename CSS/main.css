@@ -19,7 +19,6 @@ body{
 }
 
 nav{
-   
    background-color: gray;
    box-shadow: 3px 3px 3px rgb(45, 44, 44, 0.4);
    width: 100%;
@@ -34,7 +33,6 @@ nav{
 
 
 nav ul{
-
      width: 100%;
      list-style-type: none;
      display: flex;
@@ -45,7 +43,14 @@ nav ul{
 
 nav li{
      height: 50px;
+     border-right: 1px solid black;
+
 }
+
+nav li:last-child, nav li:nth-last-child(2){
+     border-right: none;
+}
+
 
 nav li a{
      display: flex;
@@ -60,11 +65,8 @@ nav li a{
 nav li a:hover{
      background-color: black;
 }
-/*
-nav li:first-child{
-     margin-right: auto;
-}
-*/
+
+
 .sidebar{
      position: fixed;
      top: 0;
@@ -74,7 +76,6 @@ nav li:first-child{
      z-index: 999;
      background-color: gray;
      opacity: 0.8;
-     /*backdrop-filter: blur(10px);*/
      box-shadow: -5px 1px 3px rgb(45, 44, 44, 0.4);
      display: none;
      flex-direction: column;
