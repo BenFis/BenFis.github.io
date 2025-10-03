@@ -7,10 +7,33 @@ html{
 
 body{
      min-height: 100vh;
-     text-align: center;
      margin: 0;
      padding: 0;
+}
 
+footer{
+     height: 65px;
+     width: 100%;
+     display: flex;
+     background-color: gray;
+     align-items: center;
+     justify-content: center;
+}
+
+footer h3{
+     color: white;
+}
+
+footer a{
+     text-decoration: none;
+}
+
+table,th,td{
+border: 1px solid black;
+}
+
+table th{
+     background-color: rgb(200, 195, 195)
 }
 
 #logo{
