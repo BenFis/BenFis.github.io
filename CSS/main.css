@@ -106,7 +106,7 @@ nav li a:hover{
      width: 140px;
      z-index: 999;
      background-color: gray;
-     opacity: 0.8;
+     opacity: 0.9;
      box-shadow: -5px 1px 3px rgb(45, 44, 44, 0.4);
      display: none;
      flex-direction: column;
