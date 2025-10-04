@@ -20,21 +20,43 @@ main{
      font-family: Verdana
 }
 
-main h1{
+main h2{
      text-align: center;
-     text-decoration: underline;
-     padding-top: 150px;
+     padding-top: 175px;
      margin: auto;
 }
 
 main p{
      margin: auto;
      width: 90%;
-     margin-top: 100px;
+     margin-top: 40px;
      text-indent: 50px;
      line-height: 1.6;
-     padding-bottom: 75px;
+     margin-bottom: 100px;
      text-align: justify;
+}
+
+main li a{
+     line-height: 30px;
+}
+
+
+section h2{
+     text-align: center; 
+     font-family: Verdana; 
+     margin: auto;
+}
+
+section ul{ 
+     text-align: justify;
+     width: 90%;
+     margin-bottom: 50px;
+     font-family: Verdana;
+     margin-top: 50px;
+}
+
+section li a{
+     line-height: 30px;
 }
 
 footer{
@@ -113,7 +135,7 @@ nav li:last-child, nav li:nth-last-child(2){
 nav li a{
      display: flex;
      color: white;
-     padding: 0 30px;
+     padding: 0 15px;
      text-decoration: none;
      align-items: center;
      height: 100%;
