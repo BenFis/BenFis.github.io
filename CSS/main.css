@@ -3,16 +3,38 @@ html{
      display: flexbox;
      margin: 0;
      padding: 0;
+     height: 100%;
+     box-sizing: border-box;
 }
 
 body{
      min-height: 100vh;
      margin: 0;
      padding: 0;
+     position: relative;
+     padding-bottom: 70px;
+     box-sizing: inherit;
 }
 
 main{
      font-family: Verdana
+}
+
+main h1{
+     text-align: center;
+     text-decoration: underline;
+     padding-top: 150px;
+     margin: auto;
+}
+
+main p{
+     margin: auto;
+     width: 90%;
+     margin-top: 100px;
+     text-indent: 50px;
+     line-height: 1.6;
+     padding-bottom: 75px;
+     text-align: justify;
 }
 
 footer{
@@ -22,6 +44,11 @@ footer{
      background-color: gray;
      align-items: center;
      justify-content: center;
+     bottom: 0;
+     right: 0;
+     left: 0;
+     padding: 0;
+     position: absolute
 }
 
 footer h3{
