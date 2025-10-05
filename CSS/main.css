@@ -17,12 +17,13 @@ body{
 }
 
 main{
-     font-family: Verdana
+     font-family: Verdana;
+     margin: auto;
 }
 
 main h2{
      text-align: center;
-     padding-top: 175px;
+     padding-top: 125px;
      margin: auto;
 }
 
@@ -40,6 +41,9 @@ main li a{
      line-height: 30px;
 }
 
+section{
+     margin: auto;
+}
 
 section h2{
      text-align: center; 
@@ -48,19 +52,18 @@ section h2{
 }
 
 section ul{ 
-     text-align: justify;
+     /*text-align: justify;*/
      width: fit-content;
      margin-bottom: 50px;
      font-family: Verdana;
      margin-top: 50px;
-
+     /*padding-left: 80px;*/
 }
 
 section li{
      line-height: 30px;
-     text-align: justify;
-     width: 90%;
-
+     /*text-align: justify;*/
+     width: 90%
 }
 
 footer{
