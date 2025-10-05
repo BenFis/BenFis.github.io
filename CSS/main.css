@@ -34,7 +34,6 @@ main p{
      text-indent: 50px;
      line-height: 1.6;
      margin-bottom: 100px;
-     text-align: justify;
 }
 
 main li a{
@@ -52,17 +51,14 @@ section h2{
 }
 
 section ul{ 
-     /*text-align: justify;*/
      width: fit-content;
      margin-bottom: 50px;
      font-family: Verdana;
      margin-top: 50px;
-     /*padding-left: 80px;*/
 }
 
 section li{
      line-height: 30px;
-     /*text-align: justify;*/
      width: 90%
 }
 
