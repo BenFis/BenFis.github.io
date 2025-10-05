@@ -55,8 +55,12 @@ section ul{
      margin-top: 50px;
 }
 
-section li a{
+section li{
      line-height: 30px;
+     margin: auto;
+     text-align: justify;
+     width: 90%;
+
 }
 
 footer{
