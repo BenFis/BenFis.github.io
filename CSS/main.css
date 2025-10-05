@@ -49,15 +49,15 @@ section h2{
 
 section ul{ 
      text-align: justify;
-     width: 90%;
+     width: fit-content;
      margin-bottom: 50px;
      font-family: Verdana;
      margin-top: 50px;
+
 }
 
 section li{
      line-height: 30px;
-     margin: auto;
      text-align: justify;
      width: 90%;
 
