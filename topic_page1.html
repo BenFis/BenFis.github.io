@@ -39,13 +39,45 @@
 
     
          <main>
-                <h1>
-                    HTML...
-                </h1>
-                <p>
-                    Topic Page 1
+                <h2>
+                    The Domain Name System (DNS) 
+                </h2>
+                <p style="margin-bottom: 0;">
+                    The Domain Name System (DNS) is a fundamental technology that makes the internet accessible and easy to use. While computers and other devices
+                    communicate using numerical IP addresses, these numbers are difficult for humans to remember. DNS solves this problem by converting readable
+                    web addresses, such as www.coca-cola.com, into numerical IPs like 52.14.144.171, allowing users to navigate the web seamlessly.              
+                    Introduced in 1983 by Paul Mockapetris, DNS replaced the older HOSTS.TXT system, which became unmanageable as the number of connected devices
+                    grew.
                 </p>
-         </main>
+                <ul>
+                    <h4>DNS is organized in a decentralized, hierarchical structure:</h4>
+                    <li>
+                        Root Zone: The top level, directing queries to Top-Level Domains (TLDs) such as .com, .org, .edu, or country-specific extensions like .us and .uk.
+                    </li>
+                    <li>
+                        Second-Level Domains: Often representing organizations or individuals, e.g., kennesaw.edu.
+                    </li>
+                    <li>
+                        Subdomains: Representing specific departments or services within a site, e.g., mail.yahoo.com.
+                    </li>
+                    <h4>When a web address is entered, name resolution takes place:</h4>
+                    <li>
+                        The device contacts a recursive resolver, usually provided by an Internet Service Provider.
+                    </li>
+                    <li>
+                        The resolver queries root servers, then TLD servers, and finally the authoritative server for the domain.
+                    </li>
+                    <li>
+                        The IP address is returned to the device, and the connection is established.
+                    </li>
+                </ul>
+                <p>
+                    This process happens in milliseconds and is repeated billions of times daily. DNS also manages additional records
+                    like MX (email), CNAME (aliases), and TXT (authentication/security), making it essential not just for browsing but
+                    also for email, cloud services, and online security. DNS is the invisible framework that supports internet navigation,
+                    ensuring fast, reliable, and structured access to the online world.
+                </p>
+         </main>   
 
          <footer>
               <h3>

@@ -35,10 +35,17 @@ main p{
      line-height: 1.6;
      margin-bottom: 100px;
 }
+main ul{
+     padding-top: 20px;
+     width: 90%;
+     margin: auto;
+}
 
-main li a{
+main li{
      line-height: 30px;
 }
+
+
 
 section{
      margin: auto;
@@ -51,10 +58,12 @@ section h2{
 }
 
 section ul{ 
-     width: fit-content;
-     margin-bottom: 50px;
+     width: 90%;
      font-family: Verdana;
+     margin: auto;
      margin-top: 50px;
+     margin-bottom: 100px;
+
 }
 
 section li{
