@@ -48,7 +48,7 @@ main p{
 }
 main ul{
      padding-top: 20px;
-     /*width: 90%;*/
+     width: 90%;
      /*margin: auto;*/
      margin-left: auto;
      margin-right: auto;
@@ -56,7 +56,7 @@ main ul{
 
 main li{
      line-height: 30px;
-     width: 90%;
+     /*width: 90%;*/
      margin-left: auto;
      margin-right: auto;
 }
