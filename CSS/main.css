@@ -47,15 +47,14 @@ main p{
 main ul{
      padding-top: 20px;
      width: 90%;
-     /*margin: auto;*/
      margin-left: auto;
      margin-right: auto;
 }
 
 main li{
      line-height: 30px;
-     /*width: 90%;*/
-     margin-left: 0;
+     width: 90%;
+     margin-left: auto;
      margin-right: auto;
 }
 main h4{
