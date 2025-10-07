@@ -39,12 +39,85 @@
 
     
          <main>
-                <h1>
-                   HTML...
-                </h1>
-                <p>
-                   Concept
-                </p>
+               <h2>
+                  Key Concepts
+               </h2>
+               <h4 style="margin-top: 40px;">
+                  Domain Name System (DNS):
+               </h4>
+               <p id="concept_p">
+                  The Domain Name System (DNS) is one of the most vital infrastructures of the modern internet.
+                  Its main function is to translate domain names (like www.coca-cola.com) into numerical IP addresses (such as 52.14.144.171) that computers
+                  use to locate each other. Without DNS, users would have to memorize long strings of numbers to access websites. DNS works like the internets
+                  phonebook, converting familiar names into machine-readable codes. It supports almost every form of online communication, including web browsing,
+                  email delivery, mobile apps, and cloud-based services. Because of its importance, DNS is often called “the backbone of the internet.” It enables
+                  seamless access to millions of resources every second, providing structure, order, and connectivity in the digital world.
+               </p>
+               <h4>
+                  Hierarchical Architecture:
+               </h4>
+               <p id="concept_p">
+                  The DNS is designed to be hierarchical, decentralized, and redundant — all critical for efficiency and reliability. At the top sits the root zone,
+                  which points to top-level domain (TLD) servers such as .com, .net, .org, and country codes like .us or .jp. Beneath those are second-level domains,
+                  often representing organizations or brands (e.g., example.com), followed by subdomains (e.g., blog.example.com). This layered architecture distributes
+                  control and prevents single points of failure. Instead of one central database, DNS information is replicated across thousands of servers worldwide,
+                  allowing the internet to stay resilient even when parts of the network go offline.
+               </p>
+               <h4>
+                  DNS Resolution Process:
+               </h4>
+               <p id="concept_p" style="margin-bottom: 0;">
+                  The DNS resolution process is what happens when a user types a website address into their browser.
+               </p>
+               <ul>
+                  <li>The browser checks its local cache to see if the IP address is already stored.</li>
+                  <li>If not found, it sends a query to a recursive resolver (usually operated by the users ISP or a third-party like Google DNS).</li>
+                  <li>The resolver contacts root servers, then TLD servers, and finally authoritative name servers to find the correct IP address.</li>
+                  <li>Once the address is located, it is cached at multiple levels (browser, OS, and resolver) to speed up future requests.</li>
+               </ul>
+               <p id="concept_p">
+                  This process happens in milliseconds, enabling the webs smooth and responsive behavior. Efficient resolution ensures faster website
+                  loading times and a better overall user experience.
+               </p>
+               <h4>
+                  DNS Records:
+               </h4>
+               <p id="concept_p" style="margin-bottom: 0;">
+                  DNS is far more than a name-to-number converter — it stores many types of records, each serving specific purposes:
+               </p>
+               <ul style="margin-bottom: 50px;">
+                  <li>A Record – Maps a domain name to its IPv4 address.</li>
+                  <li>AAAA Record – Maps to an IPv6 address.</li>
+                  <li>TXT Record – Holds text-based data for verification, SPF, or security keys.</li>
+                  <li>CNAME Record – Creates an alias that points one domain to another.</li>
+                  <li>MX Record – Specifies mail servers for email routing.</li>
+                  <li>NS Record – Points to the authoritative name servers for a domain. Through these records, DNS supports web traffic,
+                      authentication, email, cloud connections, and even IoT devices, making it integral to modern digital infrastructure.</li>
+               </ul>
+               <h4>
+                  DNS Security and Cyber Threats:
+               </h4>
+               <p id="concept_p" style="margin-bottom: 0;">
+                  As DNS plays such a crucial role, it is often the target of cyberattacks. Common threats include:
+               </p>
+               <ul style="margin-bottom: 50px;">
+                  <li>Cache Poisoning: Attackers inject false information into a resolvers cache, redirecting users to malicious sites.</li>
+                  <li>Spoofing: Imitates legitimate DNS responses to hijack traffic.</li>
+                  <li>DDoS Attacks: The overload DNS servers with a huge amount of traffic, rendering them unavailable. To counter these issues, technologies
+                      such as DNSSEC (Domain Name System Security Extensions) digitally sign DNS data to ensure authenticity. DNS over HTTPS
+                      (DoH) and DNS over TLS (DoT) encrypt queries, protecting them from interception, while also maintaining user privacy. These advancements
+                      make DNS more secure, trusted, and resistant to manipulation.</li>
+               </ul>
+               <h4>
+                  Managed DNS Services:
+               </h4>
+               <p id="concept_p" style="margin-bottom: 100px;">
+                  Many organizations now use managed DNS services provided by companies like Cloudflare, Google, or AWS. These providers offer enhanced speed,
+                  uptime, redundancy, and protection beyond what a single organization could maintain on its own. Managed DNS often includes load balancing,
+                  geolocation-based routing, and failover mechanisms that keep websites accessible even during outages. In addition, DNS analytics tools allow
+                  businesses to study query data, uncover performance issues, detect abnormal activity, and optimize user experiences. This shift has transformed
+                  DNS from a background process into a strategic component of cybersecurity, business intelligence, and customer engagement.
+               </p>
          </main>
          
          

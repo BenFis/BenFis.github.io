@@ -16,6 +16,17 @@ body{
      box-sizing: inherit;
 }
 
+
+
+
+#concept_p{
+     margin-top: 10px;
+     text-indent: 0;
+     margin-bottom: 50px;
+
+
+}
+
 main{
      font-family: Verdana;
      margin: auto;
@@ -43,7 +54,7 @@ main ul{
 
 main li{
      line-height: 30px;
-     width: 90%;
+     /*width: 90%;*/
      margin-left: auto;
      margin-right: auto;
 }
