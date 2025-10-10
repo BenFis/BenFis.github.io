@@ -1,16 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title>Topic 2</title>
+    <head>        <!--Defines the characteristics of the page such as the stylesheet used-->
+        <title>Topic 2</title>    <!--Name displayed in the viewing tab-->
         <link href="CSS/main.css" rel="stylesheet">
         <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">  <!--Used for the IE browser-->
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     
    <body>
         
-        <nav>
+        <nav>  <!--Vertical Navigation Bar with Java script code located at the bottom of the page-->
                <ul class="sidebar">
                       <li onclick="hideSidebar()"><a href="index.html"><img src="/images/close_24dp.svg" height="35" width="35" alt="close"></a></li>
                       <li><a href="index.html">Home</a></li>
@@ -21,7 +21,7 @@
                       <li><a href="reference.html">Reference</a></li>
                </ul>
           
-        
+               <!--Horizontal Navigation Bar with Java script code located at the bottom of the page-->
                <ul>
                       <a id="logo"><img src="/images/Kennesaw_State_Owls_logo.png" height="60" width="60"></a>
                       <li class="phonehide"><a href="index.html">Home</a></li>
@@ -74,16 +74,16 @@
           </footer>
 
 
-
+         <!--Scripts used for both Nav menus -->
          <script>
-            function showSidebar(){
+             function showSidebar(){            /*Manipulates the sidebar display property to "flex" when used*/
                   const sidebar = document.querySelector(".sidebar")
                   sidebar.style.display = "flex"
-               }
-            function hideSidebar(){
+                }
+             function hideSidebar(){            /*Manipulates the sidebar display property to "none" when used*/
                   const sidebar = document.querySelector(".sidebar")
                   sidebar.style.display = "none"
-               }
+                }
          </script>
 
      </body>

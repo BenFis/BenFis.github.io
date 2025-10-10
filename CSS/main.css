@@ -1,12 +1,17 @@
+/*This is the main file that houses the majority of selectors and their values for the web pages.
+There are inline properties and values on certain pages, as all the pages to do not share the same setup
+Flexbox is used FOR ITS responsive design allowing adjustment between different sized displays*/
+
+/*properties and values for the entirety of the .html files*/
 html{
      background-color:white;
-     display: flexbox;
+     display: flexbox;   
      margin: 0;
      padding: 0;
      height: 100%;
      box-sizing: border-box;
 }
-
+/* P&V for all the visible contents*/
 body{
      min-height: 100vh;
      margin: 0;
@@ -15,24 +20,24 @@ body{
      padding-bottom: 70px;
      box-sizing: inherit;
 }
-
+/*Values for the Concept page paragraphs*/
 #concept_p{
      margin-top: 20px;
      text-indent: 0;
      margin-bottom: 50px;
 }
-
+/*Font and margin values for everything in the "Main" element*/
 main{
      font-family: Verdana;
      margin: auto;
 }
-
+/*values for the headings on each page...set padding between top navbar and heading*/
 main h2{
      text-align: center;
      padding-top: 125px;
      margin: auto;
 }
-
+/*values for the parapgraphs in the main element*/
 main p{
      margin: auto;
      width: 90%;
@@ -41,36 +46,37 @@ main p{
      line-height: 1.6;
      margin-bottom: 100px;
 }
+/*values for the un-ordered list element in main */
 main ul{
      padding-top: 20px;
      width: 90%;
      margin-left: auto;
      margin-right: auto;
 }
-
+/* granular values over the list */
 main li{
      line-height: 30px;
      text-align:left;
      width: 90%;
      margin-right: auto;
 }
-
+/*Mains heading 4 values*/
 main h4{
      width: 90%;
      margin-left: auto;
      margin-right: auto;
 }
-
+/*Secondary section values used on certain pages that fall out of the scope of the main element*/
 section{
      margin: auto;
 }
-
+/*H2 values in the section element*/
 section h2{
      text-align: center; 
      font-family: Verdana; 
      margin: auto;
 }
-
+/*Un-ordered list value in the section element*/
 section ul{ 
      width: 90%;
      font-family: Verdana;
@@ -79,12 +85,12 @@ section ul{
      margin-bottom: 100px;
 
 }
-
+/*Granular list P&V's in the section element of the index page*/
 section li{
      line-height: 30px;
      width: 90%
 }
-
+/*Shared values for all pages in the bottom footer element*/
 footer{
      height: 70px;
      width: 100%;
@@ -98,33 +104,33 @@ footer{
      padding: 0;
      position: absolute
 }
-
+/*Footer text color*/
 footer h3{
      color: white;
 }
-
+/*Footer anchor link: (remove underline and change font look)*/
 footer a{
      text-decoration: none;
      font-family: Verdana
 }
-
+/*P&V's of the tables,table headers, and table data*/
 table,th,td{
      border: 2px solid black;
      border-collapse: collapse;
 }
-
+/*Value specific to table headers*/
 table th{
      background-color: rgb(200, 195, 195)  
 }
-
+/*Values for the (ID selector "logo") which is the KSU image on the navbar*/
 #logo{
      margin-right: auto;
      align-items: center;
 }
-
+/*P&V's for the navbar on top of every page*/
 nav{
    background-color: gray;
-   box-shadow: 3px 3px 3px rgb(45, 44, 44, 0.4);
+   box-shadow: 3px 3px 3px rgb(45, 44, 44, 0.4); /*horizontal navbar effect*/
    width: 100%;
    height: 70px;
    color: white;
@@ -151,11 +157,11 @@ nav li{
      height: 50px;
      border-right: 1px solid black;
 }
-
+/*Value specific to the navbar list which removes the vertical border from the last and second to last list choices*/
 nav li:last-child, nav li:nth-last-child(2){
      border-right: none;
 }
-
+/*values effecting the different anchors that make up the navbar choices*/
 nav li a{
      display: flex;
      color: white;
@@ -165,23 +171,23 @@ nav li a{
      height: 100%;
      font-family: Verdana;
 }
-
+/*value that sets the color of the hover background when the mouse hovers over an anchor in the navbar */
 nav li a:hover{
      background-color: black;
 }
-
+/*Vertical navbar values used when seen on a smaller display such as a phone*/
 .sidebar{
      position: fixed;
      top: 0;
      right: 0;
      height: 100vh;
      width: 140px;
-     z-index: 999;
+     z-index: 999;  /*ensures the menu sits on top of everything on the webpage*/
      background-color: gray;
      opacity: 0.9;
      box-shadow: -5px 1px 3px rgb(45, 44, 44, 0.4);
      display: none;
-     flex-direction: column;
+     flex-direction: column; /*value used, as the menu when seen on smaller diplays is in vertical form*/ 
      align-items: flex-start;
      justify-content: flex-start;
 }
@@ -194,13 +200,13 @@ nav li a:hover{
      width: 100%;
      color: white;
 }
-
+/*This class is normally hidden from display, being dependent on other criteria*/
 .menu-button{
      display: none;
 }
-
+/*Different style based on viewing size*/
 @media(max-width: 800px){
-     .phonehide{
+     .phonehide{               /*hides all the horizontal navbar choices when on smaller displays*/
           display: none;
      }
 
@@ -208,9 +214,9 @@ nav li a:hover{
           display: block;
      }
 }
-
+/*Different style based on viewing size*/
 @media(max-width: 400px){
-     .sidebar{
+     .sidebar{                /*when the display is 400px or less vertical menu should take up 100% of the viewing area*/
           width: 100%;
      }
 }
