@@ -21,7 +21,7 @@ body{
      box-sizing: inherit;
 }
 /*Values for the Concept page paragraphs*/
-#concept_p{
+.concept_p{
      margin-top: 20px;
      text-indent: 0;
      margin-bottom: 50px;
