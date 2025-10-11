@@ -124,8 +124,9 @@ table th{
 }
 /*Values for the (ID selector "logo") which is the KSU image on the navbar*/
 #logo{
-     margin-right: auto;
+     margin-top: auto;
      align-items: center;
+     padding-left: 40px;
 }
 /*P&V's for the navbar on top of every page*/
 nav{
