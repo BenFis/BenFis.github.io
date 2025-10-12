@@ -5,7 +5,7 @@ Flexbox is used FOR ITS responsive design allowing adjustment between different 
 /*properties and values for the entirety of the .html files*/
 html{
      background-color:white;
-     display: flexbox;   
+     display: flex;   
      margin: 0;
      padding: 0;
      height: 100%;
