@@ -224,7 +224,7 @@ nav li a:hover{
 #quiz{
      background: rgb(230, 228, 228);
      width: 90%;
-     /*max-width: 600px;*/
+     max-width: 600px;
      margin: 75px auto 50px auto;
      border-radius: 15px;
      padding: 30px;
