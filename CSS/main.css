@@ -220,3 +220,93 @@ nav li a:hover{
           width: 100%;
      }
 }
+
+#quiz{
+     background: rgb(230, 228, 228);
+     width: 90%;
+     max-width: 600px;
+     margin: 75px auto 50px auto;
+     border-radius: 15px;
+     padding: 30px;
+     
+}
+
+.option{
+     margin-left: auto;
+     margin-right: auto;
+     width: 100%;
+     margin-bottom: 10px;
+     padding-left: 15px;
+}
+
+#quiz button{
+     background-color: white;
+     color: black;
+     margin-top: 25px;
+     margin-right: 15px;
+     width: 100px;
+     height: 35px;
+     border: solid 1px black;
+     border-radius: 12px;
+}
+
+#quiz button:hover{
+     background-color: rgb(11, 128, 167);
+     color: white;
+     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.6);
+     transition-duration: 0.4s;
+     cursor: pointer;
+}
+
+
+.question{
+     background-color: rgb(194, 200, 201);
+     border: solid 1px black;
+     margin-bottom: 25px;
+     border-radius: 12px;
+     padding-bottom: 20px;
+}
+
+.question h3{
+     text-align: center;
+     margin-bottom: 75px;
+     text-decoration: underline;
+}
+
+.question p{
+     width: 90%;
+     text-indent: 0;
+}
+
+#result {
+    margin-top: 50px;
+    padding: 20px;
+    background-color: lightblue;
+    border-radius: 12px;
+    border: solid 1px black;
+}
+
+#result h3{
+     font-size: x-large;
+     text-align: center;
+     margin-bottom: 60px;
+}
+
+#result h4{
+     font-size: large;
+     margin-top: 50px;
+     margin-bottom: 7px;
+}
+
+#result h5{
+     font-size: large;
+     margin: auto;
+     width: 90%;
+}
+
+#result p{
+     font-size: medium;
+     margin: auto;
+}
+
+
