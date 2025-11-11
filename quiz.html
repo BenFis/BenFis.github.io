@@ -149,8 +149,23 @@
             if (q5Correct) score++;
 
             result += `<h4>Total Score: ${score}/5</h4>`;
-            result += `<h5>${score >= 3 ? 'You passed' : 'You Failed'}</h5>`;
+            
 
+            switch(score >= 0){
+               case score == 5: result += `<h5><br>Perfect</h5>`
+               break;
+               case score == 4: result += `<h5><br>Almost Perfect</h5>`
+               break;
+               case score == 3: result += `<h5><br>Just Passed</h5>`
+               break;
+               case score == 2: result += `<h5><br>Almost Passed</h5>`
+               break;
+               case score == 1: result += `<h5><br>You can do better</h5>`
+               break;
+               case score == 0: result += `<h5><br>Did you Study?</h5>`
+            }
+
+            
             document.getElementById('result').innerHTML = result;
             }
 
