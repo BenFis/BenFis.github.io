@@ -232,6 +232,7 @@ nav li a:hover{
      justify-content: center;
      max-width: 700px;
      border-radius: 15px;
+     border: black dashed 1px ;
      padding: 30px;
      
 }
@@ -243,6 +244,12 @@ nav li a:hover{
      margin-bottom: 10px;
      padding-left: 15px;
 }
+
+.option label{
+     padding-left: 15px;
+}
+
+
 /*Creative look of the the submit and restart buttons*/
 #quiz button{
      background-color: white;
@@ -274,7 +281,7 @@ nav li a:hover{
      width: 100%;
      margin-left: auto;
      margin-right: auto;
-     margin-bottom: 25px;
+     margin-bottom: 30px;
      border-radius: 12px;
      padding-bottom: 20px;
 }
@@ -282,12 +289,14 @@ nav li a:hover{
 .question h3{
      text-align: center;
      margin-bottom: 75px;
+     margin-top: 40px;
      text-decoration: underline;
 }
 /*Question paragraph visuals*/
 .question p{
      width: 90%;
      text-indent: 0;
+     margin-bottom: 75px;
 }
 /*Result drop down container*/
 #result {
@@ -319,4 +328,19 @@ nav li a:hover{
      margin: auto;
 }
 
+input[type=text] {
+     margin-left: 15px;
+     border: 1px solid black;
+     border-radius: 4px;
+}
+
+input[type=radio] {
+     margin-right: 8px;
+
+}
+
+input[type=checkbox] {
+     margin-right: 8px;
+
+}
 
