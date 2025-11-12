@@ -308,12 +308,15 @@ nav li a:hover{
      font-size: x-large;
      text-align: center;
      margin-bottom: 60px;
+     color: rgb(11, 128, 167);
+     text-decoration: underline;
 }
 /*header4 visual in the dropdown container*/
 #result h4{
      font-size: large;
      margin-top: 50px;
      margin-bottom: 7px;
+     color: rgb(11, 128, 167);
 }
 /*header5 visual in the dropdown container*/
 #result h5{
