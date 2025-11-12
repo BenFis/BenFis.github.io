@@ -213,6 +213,10 @@ nav li a:hover{
    .menu-button{
           display: block;
      }
+
+    #logo{
+         padding-left: 20px;
+     }
 }
 /*Different style based on viewing size*/
 @media(max-width: 400px){
