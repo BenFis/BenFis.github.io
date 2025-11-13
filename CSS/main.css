@@ -33,6 +33,7 @@ main{
 /*values for the headings on each page...set padding between top navbar and heading*/
 main h2{
      text-align: center;
+     color: rgb(11, 128, 167);
      padding-top: 125px;
      margin: auto;
 }
@@ -71,7 +72,8 @@ section{
 }
 /*H2 values in the section element*/
 section h2{
-     text-align: center; 
+     text-align: center;
+     color: rgb(11, 128, 167);
      font-family: Verdana; 
      margin: auto;
 }
@@ -347,6 +349,13 @@ input[type=radio] {
 
 input[type=checkbox] {
      margin-right: 8px;
+}
 
+footer a:link {
+     color: rgb(253, 187, 48);
+}
+
+footer a:visited{
+     color: rgb(253, 187, 48);
 }
 
