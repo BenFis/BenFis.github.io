@@ -351,11 +351,50 @@ input[type=checkbox] {
      margin-right: 8px;
 }
 
-footer a:link {
+footer a:link{
      color: rgb(253, 187, 48);
 }
 
 footer a:visited{
      color: rgb(253, 187, 48);
+}
+
+footer a:hover{
+     color: red;
+}
+
+main a{
+     text-decoration: none;
+     font-weight: bold;
+
+}
+
+main a:link{
+     color: blue;
+}
+
+main a:visited{
+     color: blue;
+}
+
+main a:hover{
+     color: red;
+}
+
+section a{
+     text-decoration: none;
+     font-weight: bold;
+}
+
+section a:link{
+     color: blue;
+}
+
+section a:visited{
+     color: blue;
+}
+
+section a:hover{
+     color: red;
 }
 
