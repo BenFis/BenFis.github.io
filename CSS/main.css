@@ -335,65 +335,65 @@ nav li a:hover{
      font-size: medium;
      margin: auto;
 }
-
+/*Changes the look of Question 4's text box on the quiz page */
 input[type=text] {
      margin-left: 15px;
      border: 1px solid black;
      border-radius: 4px;
 }
-
+/*pushes the radio options on the quiz page over to the right*/
 input[type=radio] {
      margin-right: 8px;
 
 }
-
+/*Pushes the checkboxes on the quiz page over to the right */
 input[type=checkbox] {
      margin-right: 8px;
 }
-
+/*color for the footer anchor-link*/
 footer a:link{
      color: rgb(253, 187, 48);
 }
-
+/*keeps the color of the footer anchor the same even after visited*/
 footer a:visited{
      color: rgb(253, 187, 48);
 }
-
+/*changes the color of the footer anchor when the mouse hovers over*/
 footer a:hover{
      color: red;
 }
-
+/*variables that effect the look of the links located on the Reference page*/
 main a{
      text-decoration: none;
      font-weight: bold;
 
 }
-
+/*color for the Reference page links*/
 main a:link{
      color: blue;
 }
-
+/*color for the Reference page links when visited*/
 main a:visited{
      color: blue;
 }
-
+/*color for the Reference page links when the mouse hovers over*/
 main a:hover{
      color: red;
 }
-
+/*variables that effect the look of the links of the Table of Contents located on the Index page*/
 section a{
      text-decoration: none;
      font-weight: bold;
 }
-
+/*color for the Index page links*/
 section a:link{
      color: blue;
 }
-
+/*color for the Index page links when visited*/
 section a:visited{
      color: blue;
 }
-
+/*color for the Index page links when the mouse hovers over*/
 section a:hover{
      color: red;
 }

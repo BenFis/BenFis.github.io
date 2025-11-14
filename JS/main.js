@@ -1,5 +1,5 @@
 
-//------------------Scripts used for both Nav menus-------------------------------------------------------//
+//------------------Scripts used for the Nav menus-------------------------------------------------------//
 
 
 function showSidebar(){        /*Manipulates the sidebar display property to "flex" when used*/
