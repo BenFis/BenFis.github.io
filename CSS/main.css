@@ -334,6 +334,18 @@ nav li a:hover{
 #result p{
      font-size: medium;
      margin: auto;
+     color: rgb(70, 69, 67);
+     background-color: white;
+}
+/*Puts a line above the first queston result*/
+#result p:first-of-type{
+     border-top: 1px solid black;
+     padding-top: 15px;
+}
+/*Puts a line below the last question result*/
+#result p:last-of-type{
+     border-bottom: 1px solid black;
+     padding-bottom: 15px;
 }
 /*Changes the look of Question 4's text box on the quiz page */
 input[type=text] {
@@ -366,7 +378,6 @@ footer a:hover{
 main a{
      text-decoration: none;
      font-weight: bold;
-
 }
 /*color for the Reference page links*/
 main a:link{
