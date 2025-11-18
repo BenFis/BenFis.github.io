@@ -418,7 +418,7 @@ section a:hover{
   padding-bottom: 7px;
   background-color: rgb(53, 52, 52);
   color: whitesmoke;
-  border: 2px solid whitesmoke;
+  border: 1px solid whitesmoke;
   border-radius: 7px;
   cursor: pointer;
   text-align: center;
@@ -429,11 +429,11 @@ section a:hover{
   width: 80%;
 }
 
-.button-label:hover{
+/*.button-label:hover{
   background-color: whitesmoke;
   color: black;
   border-color: rgb(53, 52, 52);
-}
+}*/
 
 input[type="radio"]:checked + .button-label {
   background-color: rgb(253, 187, 48);
