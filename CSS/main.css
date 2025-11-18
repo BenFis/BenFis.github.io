@@ -297,6 +297,7 @@ nav li a:hover{
      width: 90%;
      text-indent: 0;
      margin-bottom: 75px;
+     text-align: center;
 }
 /*Result drop down container*/
 #result {
@@ -348,6 +349,7 @@ input[type=text] {
      width: 60%;
      border: 1px solid black;
      border-radius: 4px;
+     height: 20px;
 }
 /*changes the color of the text box when clicked*/
 input[type=text]:focus {
