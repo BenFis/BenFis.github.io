@@ -346,7 +346,7 @@ nav li a:hover{
 /*Changes the look of Question 4's text box on the quiz page */
 input[type=text] {
      margin: auto;
-     width: 60%;
+     width: 80%;
      border: 1px solid black;
      border-radius: 4px;
      height: 20px;
