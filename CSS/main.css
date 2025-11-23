@@ -444,12 +444,6 @@ section a:hover{
   width: 80%;
 }
 
-/*.button-label:hover{
-  background-color: whitesmoke;
-  color: black;
-  border-color: rgb(53, 52, 52);
-}*/
-
 input[type="radio"]:checked + .button-label {
   background-color: rgb(253, 187, 48);
   border-color: rgb(53, 52, 52);
