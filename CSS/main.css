@@ -428,7 +428,7 @@ section a:visited{
 section a:hover{
      color: red;
 }
-
+/*created look for the buttons in the quiz*/
 .button-label{
   display: inline-block;
   padding-top: 7px;
@@ -445,13 +445,13 @@ section a:hover{
   transition: background-color 0.3s ease; 
   width: 80%;
 }
-
+/*changed the color for when a button is clicked */
 input[type="radio"]:checked + .button-label {
   background-color: rgb(253, 187, 48);
   border-color: rgb(53, 52, 52);
   color: black;
 }
-
+/*changed the color for when a button is clicked */
 input[type="checkbox"]:checked + .button-label {
   background-color: rgb(253, 187, 48);
   border-color: rgb(53, 52, 52);
