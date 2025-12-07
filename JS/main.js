@@ -16,6 +16,7 @@ function showSidebar(){        /*Manipulates the sidebar display property to "fl
 
 
 function submitQuiz() {
+            //answers to look for by the questions//
             const answers = {
             q1: 'correct',
             q2: 'correct',
@@ -27,7 +28,7 @@ function submitQuiz() {
             let score = 0;
             const form = document.forms["quiz"];
             let result = "<h3>Results:</h3>";
-
+            //each question adds the scores dependent on if the answer is correct or not, and appends to the result string// 
             const q1 = form.q1.value;
             result += `<p>Q1: ${q1 === answers.q1 ? 'Correct' : 'Incorrect'} (Answer: Domain Name System)</p>`;
             if (q1 === answers.q1) score++;
@@ -51,7 +52,7 @@ function submitQuiz() {
 
             result += `<h4>Total Score: ${score}/5</h4>`;
             
-
+            //Depending on the count of correct questions, a different response is given//
             switch(score >= 0){
                case score == 5: result += `<h5><br>You Passed...<br>Perfect Score</h5>`
                break;
@@ -66,10 +67,10 @@ function submitQuiz() {
                case score == 0: result += `<h5><br>You Failed...<br>Did you Study?</h5>`
             }
 
-            
-            document.getElementById('result').innerHTML = result;
+            //returns all of the appended strings to display//
+            document.getElementById('result').innerHTML = result;  
             }
-
+            //Resets the quiz and clears any result information//
             function resetQuiz() {
                document.getElementById("quiz").reset();
                document.getElementById("result").innerHTML = "";
