@@ -457,5 +457,12 @@ input[type="checkbox"]:checked + .button-label {
   border-color: rgb(53, 52, 52);
   color: black;
 }
+/*variables for the DNS image on page "Topic 1" */
+#DNS{
+     display: flex;
+     margin: auto;
+     padding-top: 60px;
+     width: 80%;
+}
 
 
