@@ -465,5 +465,13 @@ input[type="checkbox"]:checked + .button-label {
      padding-top: 60px;
      width: 80%;
 }
+/*variables for the Domain image on page "Topic 2" */
+#Domain{
+     display: flex;
+     flex-direction: column;
+     margin: auto;
+     width: 70%;
+     padding-bottom: 15px;
+}
 
 
