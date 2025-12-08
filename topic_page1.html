@@ -53,29 +53,46 @@
                     DNS was introduced in 1983 by Paul Mockapetris, and replaced the older HOSTS.TXT system, which became unmanageable as the number of connected devices
                     increased.
                 </p>
-                <h4 style="margin-bottom: 0;">DNS is a decentralized, hierarchical structure:</h4>
+                <h4 style="margin-bottom: 0;">Types of DNS Servers:</h4>
                 <ul style="margin-top: 0; margin-bottom: 60px;">
                     <li>
-                        Root Zone: The top level, directing queries to Top-Level Domains (TLDs) such as .com, .org, .edu, or country-specific extensions like .us and .uk.
+                        Recursive DNS Servers: A recursive DNS server is the part of the DNS system that does most of the work to find the answer to your domain lookup. 
+                        When a website is typed into the browser, the device sends a request to a recursive server first. This server’s job is to track down the IP address
+                        you need, even if it has to interact with other DNS servers along the way. They serve as the middleman a device and the global DNS infrastructure.
                     </li>
                     <li>
-                        Second-Level Domains: Often representing organizations or individuals, e.g., kennesaw.edu.
+                        Authorative DNS Servers: An authoritative DNS server is the part of the DNS system that holds the official information about a domain such as GoDaddy. Thinking of 
+                        DNS like a series of directories, the authoritative server is the one that owns the final, accurate record, and knows exactly which IP address a
+                        domain should point to, as it stores the domain’s actual DNS data.
                     </li>
                     <li>
-                        Subdomains: Representing specific departments or services within a site, e.g., mail.yahoo.com.
+                        Caching and Forwarding DNS Servers: A caching DNS server’s main job is to save time and reduce network traffic by temporarily storing the answers it
+                        receives from other DNS servers. When a user requests a domain’s IP address, the caching server checks if it already has the answer saved from a previous lookup, and if
+                        it does, it can quickly respond without asking other servers again.
+                        A forwarding DNS server acts like a middleman, passing DNS queries from clients to other DNS servers, usually outside the LAN. Instead of handling the full
+                        lookup process itself, it sends the query on behalf of the client and returns the answer. They are often used by organizations to manage DNS traffic, add a
+                        layer of control, and improve efficiency by directing queries to faster DNS servers.
                     </li>
                 </ul>    
-                <h4 style="margin-bottom: 0;">When a web address is entered, name resolution takes place:</h4>
+                <h4 style="margin-bottom: 0;">A DNS query typically involves four distinct server types to resolve a domain name into its corresponding IP address:</h4>
                 <ul style="margin-top: 0; margin-bottom: 60px;">
                     <li>
-                        The device contacts a recursive resolver, usually provided by an Internet Service Provider.
+                        The device contacts a recursive resolver, usually provided by an Internet Service Provider. This resolver initiates the process by receiving the client’s request and forwarding it through the DNS hierarchy.
+                        In essence its main job is to find IP addresses by contacting other DNS servers. Once it gets the query, it forwards questions to the other servers in the hierarchical order.
                     </li>
                     <li>
-                        The resolver queries root servers, then TLD servers, and finally the authoritative server for the domain.
+                        The resolver then queries root servers, which provide direction by identifying the appropriate top-level domain (TLD) nameserver. When the resolver asks for information, they don’t return the final IP
+                        address. Instead, they respond with a list of TLD nameservers associated with the requested domain’s extension (such as .com, .org, or .net).
                     </li>
                     <li>
-                        The IP address is returned to the device, and the connection is established.
+                        The TLD nameserver is next in line referring the resolver to the domain’s authoritative nameserver which holds the detailed records needed to complete the search.
                     </li>
+                    <li>
+                        The authoritative server, which hosts the definitive zone records for a domain returns the final correct IP address needed completing the process. Authoritative servers come in two forms: a primary server that
+                        stores the original zone data and a secondary server that holds a duplicated copy to help balance traffic and provide redundancy if the primary server goes down. 
+                        Together, these components enable structured, reliable name resolution across the internet.
+                    </li>
+                    
                 </ul>
                 <p>
                     This process happens in milliseconds and is repeated billions of times daily. DNS also manages many other records
